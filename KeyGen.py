@@ -2,7 +2,7 @@ import random
 
 class Key:
 
-	def __ini__(self, key=''):
+	def __init__(self, key=''):
 		if key == '':
 			self.key = self.generate()
 		else:
@@ -46,7 +46,7 @@ class Key:
 	def __str__(self):
 		valid = 'Invalid'
 		if self.verify():
-			valid = 'Valid'
+			valid = ' your new Key'
 		return self.key.upper() + ":" + valid
 
 key = Key('aaaa-bbbb-cccc-dddd-1111')
