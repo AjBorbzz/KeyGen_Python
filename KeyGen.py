@@ -28,7 +28,7 @@ class Key:
 		key = ''
 		chunk = ''
 		check_digit_count = 0
-		alphabet = 'abcdefghijklmnopqrstuvwxyz'
+		alphabet = 'abcdefghijklmnopqrstuvwxyz1234567890'
 		while True:
 			while len(key) < 25:
 				char = random.choice(alphabet)
@@ -48,3 +48,6 @@ class Key:
 		if self.verify():
 			valid = 'Valid'
 		return self.key.upper() + ":" + valid
+
+key = Key('aaaa-bbbb-cccc-dddd-1111')
+print(Key())
